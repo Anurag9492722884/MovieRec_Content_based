@@ -31,6 +31,19 @@ lis = movies2['title'].values
 
 
 st.set_page_config(layout="wide")
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: rgb(72 173 209)
+    }
+   .sidebar .sidebar-content {
+        background: url("url_goes_here")
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 st.title('Movie Recomender System 🎥')
 option = st.selectbox(
